@@ -48,15 +48,14 @@ exports.GiveawayStartOptions = {};
  * @type {GiveawayMessages}
  */
 exports.defaultGiveawayMessages = {
-    giveaway: '@everyone\n\n🎉🎉 **GIVEAWAY** 🎉🎉',
-    giveawayEnded: '@everyone\n\n🎉🎉 **GIVEAWAY ENDED** 🎉🎉',
+    giveaway: '🎉 **GIVEAWAY** 🎉',
+    giveawayEnded: '🎉 **GIVEAWAY ENDED** 🎉',
     inviteToParticipate: 'React with 🎉 to participate!',
     timeRemaining: 'Time remaining: **{duration}**',
     winMessage: 'Congratulations, {winners}! You won **{prize}**!\n{messageURL}',
-    embedFooter: 'Powered by the discord-giveaways package',
     noWinner: 'Giveaway cancelled, no valid participations.',
-    winners: 'winner(s)',
-    endedAt: 'End at',
+    winners: 'Winner(s):',
+    endedAt: 'Ended at',
     hostedBy: 'Hosted by: {user}',
     units: {
         seconds: 'seconds',

@@ -194,7 +194,7 @@ class GiveawaysManager extends EventEmitter {
                 exemptPermissions: options.exemptPermissions,
                 exemptMembers: options.exemptMembers,
                 embedColor: options.embedColor,
-                embedColorEnd: options.embedColorEnd,
+                embedColorEnd: options.embedColorEnd ?? options.embedColor,
                 extraData: options.extraData
             });
             const embed = this.generateMainEmbed(giveaway);

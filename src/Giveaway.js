@@ -137,6 +137,14 @@ class Giveaway extends EventEmitter {
     }
 
     /**
+     * The color of the giveaway embed
+     * @type {Discord.ColorResolvable}
+     */
+    get requirements() {
+        return this.options.requirements;
+    }
+
+    /**
      * The color of the giveaway embed when it's ended
      * @type {Discord.ColorResolvable}
      */

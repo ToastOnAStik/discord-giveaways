@@ -83,8 +83,7 @@ class GiveawaysManager extends EventEmitter {
     generateEndEmbed(giveaway, winners) {
         const formattedWinners = winners.map((w) => `<@${w.id}>`).join(', ');
         const winnersString =
-            giveaway.messages.winners.substr(0, 1).toUpperCase() +
-            giveaway.messages.winners.substr(1, giveaway.messages.winners.length) +
+            giveaway.winnerCount === 1 ? 'Winner' : 'Winners' +
             ': ' +
             formattedWinners;
         const embed = new Discord.MessageEmbed();

@@ -50,7 +50,7 @@ exports.GiveawayStartOptions = {};
 exports.defaultGiveawayMessages = {
     giveaway: '🎉 **GIVEAWAY** 🎉',
     giveawayEnded: '🎉 **GIVEAWAY ENDED** 🎉',
-    inviteToParticipate: 'React with 🎉 to participate!',
+    inviteToParticipate: 'React with 🎉 to enter',
     timeRemaining: 'Time remaining: **{duration}**',
     winMessage: 'Congratulations, {winners}! You won **{prize}**!\n{messageURL}',
     noWinner: 'Giveaway cancelled, no valid participations.',

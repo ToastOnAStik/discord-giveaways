@@ -89,7 +89,7 @@ declare module 'discord-giveaways' {
     }
     class Giveaway extends EventEmitter {
         constructor(manager: GiveawaysManager, options: GiveawayData);
-
+        public requirements: Snowflake;
         public botsCanWin: boolean;
         readonly channel: TextChannel;
         public channelID: Snowflake;

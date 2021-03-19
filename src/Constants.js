@@ -30,6 +30,7 @@ exports.GiveawayMessages = {};
  * @property {number} time The giveaway duration
  * @property {number} winnerCount The number of winners for the giveaway
  * @property {string} prize The giveaway prize
+ * @property {Discord.Snowflake} [requirements] The role requirement to enter this giveaway.
  * @property {Discord.User} [hostedBy] The user who hosts the giveaway
  * @property {Boolean} [botsCanWin] Whether the bots are able to win a giveaway.
  * @property {Array<Discord.PermissionResolvable>} [exemptPermissions] Members with any of these permissions won't be able to win a giveaway.

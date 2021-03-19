@@ -58,6 +58,7 @@ declare module 'discord-giveaways' {
         exemptMembers?: () => boolean;
         embedColor?: ColorResolvable;
         embedColorEnd?: ColorResolvable;
+        requirements?: Snowflake;
         reaction?: string;
         messages?: Partial<GiveawaysMessages>;
         extraData?: any;
@@ -114,7 +115,6 @@ declare module 'discord-giveaways' {
         public startAt: number;
         public winnerCount: number;
         public winnerIDs: Array<string>;
-
         public exemptMembers(): boolean;
         public edit(options: GiveawayEditOptions): Promise<Giveaway>;
         public end(): Promise<GuildMember[]>;
@@ -148,6 +148,7 @@ declare module 'discord-giveaways' {
         ended: boolean;
         prize: string;
         channelID: Snowflake;
+        requirements: Snowflake;
         guildID: Snowflake;
         messageID?: Snowflake | null;
         reaction?: string;

@@ -33,6 +33,11 @@ class Giveaway extends EventEmitter {
          * The start date of the giveaway
          * @type {Number}
          */
+        this.requirements = options.requirements;
+        /**
+         * The giveaway messages
+         * @type {Snowflake}
+         */
         this.startAt = options.startAt;
         /**
          * The end date of the giveaway

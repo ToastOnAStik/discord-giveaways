@@ -67,7 +67,7 @@ class GiveawaysManager extends EventEmitter {
                 giveaway.messages.inviteToParticipate +
                 '\n' +
                 giveaway.remainingTimeText.split(',')[0] +
-                '\n' +
+                '**\n' +
                 (giveaway.requirements ? `Requirements: <@&${giveaway.requirements}>\n` : '') +
                 (giveaway.hostedBy ? giveaway.messages.hostedBy.replace('{user}', giveaway.hostedBy) : '')
             )

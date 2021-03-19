@@ -54,7 +54,7 @@ exports.defaultGiveawayMessages = {
     timeRemaining: 'Time remaining: **{duration}**',
     winMessage: 'Congratulations, {winners}! You won **{prize}**!\n{messageURL}',
     noWinner: 'Giveaway cancelled, no valid participations.',
-    winners: 'Winner(s):',
+    winners: 'Winner(s)',
     endedAt: 'Ended at',
     hostedBy: 'Hosted by: {user}',
     units: {

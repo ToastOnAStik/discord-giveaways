@@ -352,7 +352,7 @@ class Giveaway extends EventEmitter {
             }
         }
 
-        return winners.map((user) => guild.member(user) || user);
+        return winners.map((user) => guild.members.resolve(user) || user);
     }
 
     /**

@@ -186,6 +186,7 @@ class GiveawaysManager extends EventEmitter {
                 guildID: channel.guild.id,
                 ended: false,
                 prize: options.prize,
+                requirements: options.requirements,
                 hostedBy: options.hostedBy ? options.hostedBy.toString() : null,
                 messages: options.messages,
                 reaction: options.reaction,

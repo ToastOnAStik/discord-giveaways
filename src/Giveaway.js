@@ -135,15 +135,7 @@ class Giveaway extends EventEmitter {
     get embedColor() {
         return this.options.embedColor || this.manager.options.default.embedColor;
     }
-
-    /**
-     * The color of the giveaway embed
-     * @type {Discord.ColorResolvable}
-     */
-    get requirements() {
-        return this.options.requirements;
-    }
-
+    
     /**
      * The color of the giveaway embed when it's ended
      * @type {Discord.ColorResolvable}

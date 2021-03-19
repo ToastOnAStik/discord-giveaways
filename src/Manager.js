@@ -65,10 +65,11 @@ class GiveawaysManager extends EventEmitter {
             .setFooter(`${giveaway.winnerCount} ${giveaway.winnerCount === 1 ? 'Winner' : 'Winners'}`)
             .setDescription(
                 giveaway.messages.inviteToParticipate +
-                    '\n' +
-                    giveaway.remainingTimeText +
-                    '\n' +
-                    (giveaway.hostedBy ? giveaway.messages.hostedBy.replace('{user}', giveaway.hostedBy) : '')
+                '\n' +
+                giveaway.remainingTimeText +
+                '\n' +
+                (giveaway.requirements ? `Requirements: <@&${giveaway.requirements}>\n` : '') +
+                (giveaway.hostedBy ? giveaway.messages.hostedBy.replace('{user}', giveaway.hostedBy) : '')
             )
             .setTimestamp(new Date(giveaway.endAt).toISOString());
         return embed;
